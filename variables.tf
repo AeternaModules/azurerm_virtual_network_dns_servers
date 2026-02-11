@@ -1,6 +1,6 @@
-variable "virtual_network_dns_serverss" {
+variable "virtual_network_dns_serverses" {
   description = <<EOT
-Map of virtual_network_dns_serverss, attributes below
+Map of virtual_network_dns_serverses, attributes below
 Required:
     - virtual_network_id
 Optional:
