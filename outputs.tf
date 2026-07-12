@@ -1,13 +1,13 @@
-output "virtual_network_dns_serverses_id" {
-  description = "Map of id values across all virtual_network_dns_serverses, keyed the same as var.virtual_network_dns_serverses"
-  value       = { for k, v in azurerm_virtual_network_dns_servers.virtual_network_dns_serverses : k => v.id }
+output "virtual_network_dns_servers_id" {
+  description = "Map of id values across all virtual_network_dns_servers, keyed the same as var.virtual_network_dns_servers"
+  value       = { for k, v in azurerm_virtual_network_dns_servers.virtual_network_dns_servers : k => v.id }
 }
-output "virtual_network_dns_serverses_dns_servers" {
-  description = "Map of dns_servers values across all virtual_network_dns_serverses, keyed the same as var.virtual_network_dns_serverses"
-  value       = { for k, v in azurerm_virtual_network_dns_servers.virtual_network_dns_serverses : k => v.dns_servers }
+output "virtual_network_dns_servers_dns_servers" {
+  description = "Map of dns_servers values across all virtual_network_dns_servers, keyed the same as var.virtual_network_dns_servers"
+  value       = { for k, v in azurerm_virtual_network_dns_servers.virtual_network_dns_servers : k => v.dns_servers }
 }
-output "virtual_network_dns_serverses_virtual_network_id" {
-  description = "Map of virtual_network_id values across all virtual_network_dns_serverses, keyed the same as var.virtual_network_dns_serverses"
-  value       = { for k, v in azurerm_virtual_network_dns_servers.virtual_network_dns_serverses : k => v.virtual_network_id }
+output "virtual_network_dns_servers_virtual_network_id" {
+  description = "Map of virtual_network_id values across all virtual_network_dns_servers, keyed the same as var.virtual_network_dns_servers"
+  value       = { for k, v in azurerm_virtual_network_dns_servers.virtual_network_dns_servers : k => v.virtual_network_id }
 }
 
